@@ -1,7 +1,11 @@
-MAKE SURE YOU HAVE JRE 1.6 AND JUNIT 4
+MAKE SURE YOU HAVE JRE 1.6 (also known as: JRE 6 Update 29 Windows i586/32-bit) AND JUNIT 4.11
 
 You will need to add JUnit 4 and JRE System Library [JRE 1.6] to the Java Build Path.
 	1. right click the project (HR Solutions) on the Left Side (in Eclipse)
 	2. select "Properties" and then "Java Build Path"
 	3. go to Libraries and "Add Library" for JUnit 4 and JRE System Library
 		For JRE System Library, you may need to select the root folder as it may search for it instead
+
+NOTE: For JUnit4.11, after following the above steps, you must specify the Native Library Location...
+	1. expland JUnit 4 by clicking on the arrow or double clicking it
+	2. click "Native library location" and select the directory to where JUnit 4.11 resides

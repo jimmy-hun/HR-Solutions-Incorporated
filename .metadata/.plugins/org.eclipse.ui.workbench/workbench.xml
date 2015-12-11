@@ -8,7 +8,7 @@
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="153" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
@@ -22,7 +22,7 @@
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -31,46 +31,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="C:/Users/Kitten/Desktop/Developer/Eclipse Workspace/FIT2034 - Computer Programming 2/Major Assignment/src/Main.java" title="Main.java" tooltip="Major Assignment/src/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Major Assignment/src/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="114841" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Department.java" partName="Department.java" path="C:/Users/Kitten/Desktop/Developer/Eclipse Workspace/FIT2034 - Computer Programming 2/Major Assignment/src/function/Department.java" title="Department.java" tooltip="Major Assignment/src/function/Department.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Major Assignment/src/function/Department.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="4810" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Employee.java" partName="Employee.java" path="C:/Users/Kitten/Desktop/Developer/Eclipse Workspace/FIT2034 - Computer Programming 2/Major Assignment/src/function/Employee.java" title="Employee.java" tooltip="Major Assignment/src/function/Employee.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Major Assignment/src/function/Employee.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="2380" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Organisation.java" partName="Organisation.java" path="C:/Users/Kitten/Desktop/Developer/Eclipse Workspace/FIT2034 - Computer Programming 2/Major Assignment/src/function/Organisation.java" title="Organisation.java" tooltip="Major Assignment/src/function/Organisation.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Major Assignment/src/function/Organisation.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="18574" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PayLevel.java" partName="PayLevel.java" path="C:/Users/Kitten/Desktop/Developer/Eclipse Workspace/HR Solutions Incorporated/HR Solutions/src/function/PayLevel.java" title="PayLevel.java" tooltip="HR Solutions/src/function/PayLevel.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HR Solutions/src/function/PayLevel.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="87" selectionTopPixel="68"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EmployeeInformation.java" partName="EmployeeInformation.java" path="C:/Users/Kitten/Desktop/Developer/Eclipse Workspace/HR Solutions Incorporated/HR Solutions/src/notes/EmployeeInformation.java" title="EmployeeInformation.java" tooltip="HR Solutions/src/notes/EmployeeInformation.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HR Solutions/src/notes/EmployeeInformation.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1405" selectionTopPixel="272"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" partName="Main.java" path="C:/Users/Kitten/Desktop/Developer/Eclipse Workspace/HR Solutions Incorporated/HR Solutions/src/Main.java" title="Main.java" tooltip="HR Solutions/src/Main.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/HR Solutions/src/Main.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="102187" selectionTopPixel="0"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
@@ -132,7 +96,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -218,7 +182,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.18357489" ratioLeft="228" ratioRight="1014" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.22316684" ratioLeft="420" ratioRight="1462" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.658867" ratioLeft="535" ratioRight="277" relationship="4" relative="org.eclipse.ui.editorss">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
@@ -343,194 +307,15 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Major Assignment/src/files/payroll.txt"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/Department.java"/>
-<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" uri="file:/C:/Users/Kaede/Desktop/eclipse%20Workspace/FIT2034%20-%20Computer%20Programming%202/jlhun3_24206911_Major%20Assignment/Major%20Assignment/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/Employee.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/Department.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/Organisation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/PayLevel.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/notes/EmployeeInformation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/Major Assignment/src/files/payroll.txt"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week 10 [ASSESSED]/src/PizzaFrame.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week 10 [ASSESSED]/src/Ex2_ComboBox.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Week 10 [ASSESSED]/src/PizzaFrame.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/Organisation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/Department.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/Main.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/Department.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/Employee.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/Organisation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/function/PayLevel.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/notes/EmployeeInformation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Major Assignment/src/notes/EmployeeInformation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HR Solutions/src/function/PayLevel.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HR Solutions/src/notes/EmployeeInformation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/HR Solutions/src/Main.java"/>
-</editors>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="107167" y="0"/>
-</item>
-<item historyLabel="Department.java" index="2">
-<position info="not_deleted" x="4419" y="17"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="107167" y="0"/>
-</item>
-<item historyLabel="payroll.txt" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="payroll.txt" index="1">
-<position info="not_deleted" x="500" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="107435" y="0"/>
-</item>
-<item historyLabel="Main.java" index="3">
-<position info="not_deleted" x="847" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="19263" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Employee.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Department.java" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Organisation.java" index="6">
-<position info="not_deleted" x="13468" y="0"/>
-</item>
-<item historyLabel="PayLevel.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Organisation.java" index="6">
-<position info="not_deleted" x="13468" y="0"/>
-</item>
-<item historyLabel="EmployeeInformation.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="109939" y="0"/>
-</item>
-<item historyLabel="Organisation.java" index="6">
-<position info="not_deleted" x="17428" y="0"/>
-</item>
-<item historyLabel="payroll.txt" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="payroll.txt" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Organisation.java" index="6">
-<position info="not_deleted" x="17428" y="0"/>
-</item>
-<item historyLabel="EmployeeInformation.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Organisation.java" index="6">
-<position info="not_deleted" x="17428" y="0"/>
-</item>
-<item historyLabel="Main.java" index="0">
-<position info="not_deleted" x="109939" y="0"/>
-</item>
-<item historyLabel="PizzaFrame.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Ex2_ComboBox.java" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PizzaFrame.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Ex2_ComboBox.java" index="11">
-<position info="not_deleted" x="1043" y="0"/>
-</item>
-<item historyLabel="Main.java" index="12">
-<position info="not_deleted" x="109939" y="0"/>
-</item>
-<item historyLabel="PizzaFrame.java" index="13">
-<position info="not_deleted" x="7626" y="0"/>
-</item>
-<item historyLabel="Main.java" index="14">
-<position info="not_deleted" x="111552" y="626"/>
-</item>
-<item historyLabel="Organisation.java" index="15">
-<position info="not_deleted" x="11224" y="0"/>
-</item>
-<item historyLabel="Main.java" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Main.java" index="16">
-<position info="not_deleted" x="829" y="0"/>
-</item>
-<item historyLabel="Main.java" index="16">
-<position info="not_deleted" x="172" y="0"/>
-</item>
-<item historyLabel="Department.java" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Main.java" index="18">
-<position info="not_deleted" x="114841" y="0"/>
-</item>
-<item historyLabel="Main.java" index="18">
-<position info="not_deleted" x="1249" y="0"/>
-</item>
-<item historyLabel="Department.java" index="17">
-<position info="not_deleted" x="375" y="0"/>
-</item>
-<item historyLabel="Department.java" index="17">
-<position info="not_deleted" x="499" y="0"/>
-</item>
-<item historyLabel="Main.java" index="19">
-<position info="not_deleted" x="0" y="114841"/>
-</item>
-<item historyLabel="Department.java" index="20">
-<position info="not_deleted" x="0" y="4810"/>
-</item>
-<item historyLabel="Employee.java" index="21">
-<position info="not_deleted" x="0" y="2380"/>
-</item>
-<item historyLabel="Organisation.java" index="22">
-<position info="not_deleted" x="0" y="18574"/>
-</item>
-<item historyLabel="PayLevel.java" index="23">
-<position info="not_deleted" x="0" y="2078"/>
-</item>
-<item historyLabel="EmployeeInformation.java" index="24">
-<position info="not_deleted" x="1405" y="0"/>
-</item>
-<item historyLabel="PayLevel.java" index="23">
-<position info="not_deleted" x="0" y="2078"/>
-</item>
-<item historyLabel="EmployeeInformation.java" index="25">
-<position info="not_deleted" x="1405" y="0"/>
-</item>
-<item historyLabel="PayLevel.java" index="26">
-<position info="not_deleted" x="87" y="0"/>
-</item>
-<item historyLabel="EmployeeInformation.java" index="27">
-<position info="not_deleted" x="1405" y="0"/>
-</item>
-<item active="true" historyLabel="Main.java" index="28">
-<position info="not_deleted" x="951" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="right"/>
 </trimArea>
@@ -541,6 +326,7 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@ccfbd8"/>
 </trimArea>
 </trimLayout>
 </window>

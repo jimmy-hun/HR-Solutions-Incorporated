@@ -1,0 +1,15 @@
+// do check here check if ser file exists or not
+// add orgCheck as a file instance under the directory SERIALISE_FILE_NAME... this does not create the .ser file
+// FileOutputStream fileOut = new FileOutputStream(SERIALISE_FILE_NAME, false); creates the file upon exit (output stream)
+
+File orgCheck = new File(SERIALISE_FILE_NAME); 
+		
+if (orgCheck.exists())
+{
+	LoadFromSerialisedFile();
+}
+		
+else
+{
+	LoadFreshDataFromFile();
+}

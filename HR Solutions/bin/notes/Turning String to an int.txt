@@ -1,0 +1,35 @@
+// Name: 	GetIntFromComboBox 
+// Purpose:	To turn a String containing numbers into an int  
+// Passed: 	selection
+// Returns: number
+// Input: 	Nothing
+// Output: 	Nothing
+// Effect: 	1. String selection			a string is passed
+//			2. selection.split(" - ")	delete all " - " in the string
+//			3. return number			after splitting and parseInt (so string turns to int)
+//										parseInt(splits[0]) will be the first string which is the ID 
+
+private int GetIntFromComboBox(String selection)
+{
+	int number = 0;
+	
+	// .split() requires an array list as, because:
+	// if selection = "a - b - c"... selection.split(" - ") will get [a,b,c]
+	String[] splits = selection.split(" - ");
+	
+	// if the length of the array is more than 1
+	if (splits.length > 1)
+	{
+		// get the first integer by: Integer.parseInt(splits[0])
+		// 1.	Integer can be turned to String/int
+		// 2.	parseInt turns int to String
+		// 3.	[0] because you want the first no. (the ID)
+				number = Integer.parseInt(splits[0]);
+	}
+	
+	return number;
+}
+
+
+
+char uses ''

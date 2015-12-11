@@ -1,0 +1,27 @@
+Just for the sake of completeness, the following is how it could be achieved:
+
+JTextArea ta = new JTextArea();
+JScrollPane sp = new JScrollPane(ta);   // JTextArea is placed in a JScrollPane.
+
+Once the JTextArea is included in the JScrollPane, the JScrollPane should be added to where the text 
+area should be. In the following example, the text area with the scroll bars is added to a JFrame:
+
+JFrame f = new JFrame();
+f.getContentPane().add(sp);
+
+-----------------------------------------------------------------------------------------------------
+
+You first have to define a JTextArea as per usual:
+
+public final JTextArea mainConsole = new JTextArea("");
+
+Then you put a JScrollPane over the TextArea
+
+JScrollPane scrollPane = new JScrollPane(mainConsole);
+scrollPane.setBounds(10,60,780,500);
+scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+-----------------------------------------------------------------------------------------------------
+
+JScrollPane scrollPane = new JScrollPane(txtEmployeeDetails);	// JTextArea is placed in a JScrollPane.
+jFrame.getContentPane().add(scrollPane, c);	// add to frame with constraints

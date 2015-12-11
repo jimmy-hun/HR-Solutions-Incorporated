@@ -1,0 +1,29 @@
+http://stackoverflow.com/questions/1480398/java-reading-a-file-from-current-directory
+--------------------------------------------------------------------------------------------------
+If you know your file will live where your classes are, that directory will be on your class path. 
+In that case, you can be sure that this solution will solve your problem:
+
+java.net.URL path = ClassLoader.getSystemResource("myFile.txt");
+if(path==null) 
+{
+	//The file was not found, insert error handling here
+}
+
+File f = new File(path.toURI());
+reader = new BufferedReader(new FileReader(f));
+
+
+
+
+
+
+NOTE THAT IT MUST BE IN THE 'src' FOLDER AND NOT IN A PACKAGE!!!
+UNLESS YOU SPECIFY THE FOLDER PATHS ("files/myFile.txt")
+
+OTHER WAY!!! [note that the above only works if only file is used and no output or input streams are involved)
+
+String curDir = System.getProperty("user.dir") + "\\src\\???.txt";
+1. System.getProperty("user.dir") will return the current working directory
+2. \\ equates to "\" as a string in java
+3. add the corresponding folders (src folder => others if exist)
+4. add the file type to be read

@@ -1,0 +1,8 @@
+// makes a new array list using map (the previously made hash map)
+// utilises list collection so List<Map.Entry> must be used
+// The 'name of Map'.entrySet method returns a collection-view of the map, whose elements are of this class.
+// Map.Entry and .entrySet() gets the entire 'map' created previously, it contains the key AND value
+// System.out.println(employeeList.toString()); will therefore print everything in employeeList
+
+List<Map.Entry> employeeList = new ArrayList<Map.Entry>(map.entrySet());
+organisation.SortEmployeeByPayLevel(employeeList);

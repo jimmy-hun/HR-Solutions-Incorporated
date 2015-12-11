@@ -1,0 +1,207 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+
+public class Main extends JFrame
+{
+	private JButton addEmp, editEmp, remEmp;		// employee buttons
+	private JButton addDep, editDep, remDep; 		// department buttons
+	private JButton addRep; 						// pay report button
+	private JButton exitButton; 					// exit button
+	private JLabel homeNote, homeInst, homeInst1; 	// home page info
+	private AddEmpListener addEmpListener;			// add listener to addEmp
+
+	public Main() 
+	{
+		super("Main Menu");
+
+		JTabbedPane tabbedPane = new JTabbedPane(); // a tabbed pane can be used to put tabs
+		tabbedPane.addTab("Home", homeTab());
+		tabbedPane.addTab("Employee", employeeTab());
+		tabbedPane.addTab("Department", departmentTab());
+		tabbedPane.addTab("Report", reportTab());
+		tabbedPane.addTab("Exit & Save", exitTab());
+		add(tabbedPane);
+
+		setSize(640, 600);
+	}
+	
+	private JPanel homeTab()
+	{
+		JPanel tab0 = new JPanel();
+		tab0.setLayout(new GridBagLayout());  // set a GridBagLayout to tab0
+		GridBagConstraints c = new GridBagConstraints(); // enable editing of grid
+		homeNote = new JLabel("WELCOME TO KITTEN INC. HUMAN RESOURCES");
+		homeInst = new JLabel("******************************************************");
+		homeInst1 = new JLabel("Please select one of the tabs to start.");
+
+		// addition of a image as a logo
+		javax.swing.JLabel logo = new javax.swing.JLabel();
+		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kaede\\Desktop\\eclipse Workspace\\FIT2034 - Computer Programming 2\\Major Assignment\\src\\Cat-tree.jpg"));
+        tab0.add(logo);
+		
+		// edit addEmp button
+		c.fill = GridBagConstraints.CENTER; // alignment
+		c.gridy = 1;		// 1st row [position in rows]
+		tab0.add(homeNote, c);
+
+		// edit addEmp button
+		c.fill = GridBagConstraints.CENTER; // alignment
+		c.gridy = 2;		// 2nd row [position in rows]
+		tab0.add(homeInst, c);
+
+		// edit addEmp button
+		c.fill = GridBagConstraints.CENTER; // alignment
+		c.gridy = 3;		// 3rd row [position in rows]
+		tab0.add(homeInst1, c);
+
+		return tab0;		
+	}
+
+	private JPanel employeeTab()
+	{
+		JPanel tab1 = new JPanel();
+		tab1.setLayout(new GridBagLayout()); // set a GridBagLayout to tab1
+		GridBagConstraints c = new GridBagConstraints(); // enable editing of grid
+		addEmp = new JButton ("Add an Employee");
+		editEmp = new JButton ("Edit an Employee");
+		remEmp = new JButton ("Remove an Employee");
+
+		// edit addEmp button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		//makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 1;		// 1st row [position in rows]
+		tab1.add(addEmp, c);
+
+		// edit editEmp button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		//makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 2;		// 2nd row [position in rows]
+		tab1.add(editEmp, c);
+
+		// edit remEmp button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		// makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 3;		// 3rd row [position in rows]
+		tab1.add(remEmp, c);
+
+		addEmpListener = new AddEmpListener();
+		addEmp.addActionListener(addEmpListener);
+		
+		return tab1;		
+	}
+
+	private JPanel departmentTab()
+	{
+		JPanel tab2 = new JPanel();
+		tab2.setLayout(new GridBagLayout()); // set a GridBagLayout to tab2
+		GridBagConstraints c = new GridBagConstraints(); // enable editing of grid
+		addDep = new JButton ("Add a Department");
+		editDep = new JButton ("Edit a Department");
+		remDep = new JButton ("Remove a Department");
+
+		// edit addDep button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		//makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 1;		// 1st row [position in rows]
+		tab2.add(addDep, c);
+
+		// edit editDep button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		//makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 2;		// 2nd row [position in rows]
+		tab2.add(editDep, c);
+
+		// edit remDep button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		// makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 3;		// 3rd row [position in rows]
+		tab2.add(remDep, c);
+
+		return tab2;	
+	}
+	
+	private JPanel reportTab()
+	{
+		JPanel tab3 = new JPanel();
+		tab3.setLayout(new GridBagLayout()); // set a GridBagLayout to tab2
+		GridBagConstraints c = new GridBagConstraints(); // enable editing of grid
+		addRep = new JButton ("Produce Pay Report");
+
+		// edit addRep button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		//makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 1;		// 1st row [position in rows]
+		tab3.add(addRep, c);
+
+		return tab3;	
+	}
+
+	private JPanel exitTab()
+	{
+		JPanel exit = new JPanel();
+		exit.setLayout(new GridBagLayout());  // set a GridBagLayout to tab0
+		GridBagConstraints c = new GridBagConstraints(); // enable editing of grid
+		exitButton = new JButton("Exit & Save");
+
+		// edit addEmp button
+		c.fill = GridBagConstraints.CENTER; // alignment
+		c.ipady = 10;		// makes component taller
+		c.gridy = 1;		// 1st row [position in rows]
+		exit.add(exitButton, c);
+
+		return exit;		
+	}
+
+	public static void main(String[] args) 
+	{
+		Main mainFrame = new Main();
+		
+		mainFrame.addWindowListener // window close function
+		( 
+				new WindowAdapter() 
+				{
+					public void windowClosing (WindowEvent e) 
+					{
+						System.exit(0);
+					}
+				}
+		);
+		
+		mainFrame.setVisible(true); // make the frame visible
+	}
+}

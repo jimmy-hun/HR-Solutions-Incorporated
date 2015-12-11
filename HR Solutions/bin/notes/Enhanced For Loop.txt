@@ -1,0 +1,13 @@
+https://blogs.oracle.com/CoreJavaTechTips/entry/using_enhanced_for_loops_with
+
+for (int i=0; i < array.length; i++) 
+{
+    System.out.println("Element: " + array[i]);
+}
+
+to the newer form
+
+for (String element : array) 
+{
+    System.out.println("Element: " + element);
+}

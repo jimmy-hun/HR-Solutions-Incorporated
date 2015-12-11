@@ -1,0 +1,78 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class AddEmpListener implements ActionListener
+{
+	private JFrame addEmpFrame;
+	private JPanel panel;
+	private JButton add, cancel;
+	private JTextField userInput;
+	private ButtonHandler button;
+
+	public void actionPerformed(ActionEvent event)
+	{
+		addEmpFrame = new JFrame();
+		addEmpFrame.setTitle("Add an Employee"); // name the frame
+
+		panel = new JPanel();
+		addEmpFrame.setLayout(new GridLayout());  // set a GridBagLayout to tab0
+		GridBagConstraints c = new GridBagConstraints(); // enable editing of grid
+		
+		add = new JButton ("Add");
+		cancel = new JButton ("Cancel");
+		userInput = new JTextField();
+
+		// edit addEmp button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		//makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 1;		// 1st row [position in rows]
+		addEmpFrame.add(userInput, c);
+
+		// edit editEmp button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		//makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 2;		// 2nd row [position in rows]
+		addEmpFrame.add(add, c);
+
+		// edit remEmp button
+		c.fill = GridBagConstraints.HORIZONTAL; // alignment
+		c.ipady = 10;		// makes component taller
+		c.weightx = 0.0;	// request any extra horizontal space
+		c.weighty = 0.0;	// request any extra vertical space
+		c.gridwidth = 3;	// 3 columns wide
+		c.gridx = 0;		// how far it leans
+		c.gridy = 3;		// 3rd row [position in rows]
+		addEmpFrame.add(cancel, c);
+		
+		button = new ButtonHandler();
+		add.addActionListener(button);
+		cancel.addActionListener(button);
+		
+		addEmpFrame.setSize(300, 300);
+
+		addEmpFrame.setVisible(true);
+	}
+
+	private class ButtonHandler implements ActionListener 
+	{
+		// implements button press event
+		public void actionPerformed( ActionEvent event ) 
+		{
+			// put function to add here
+			
+			if (event.getSource() == cancel) 
+			{
+				addEmpFrame.dispose(); // .dispose() specifically exits the current frame (nothing is saved)
+			}
+		}
+	}
+}

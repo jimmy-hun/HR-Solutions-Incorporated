@@ -1,0 +1,29 @@
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+
+public class AddEmpListener implements ActionListener
+{
+	private super("");
+	private JFrame addEmpFrame;
+	private JPanel panel;
+	private JButton add, cancel;
+	
+	public void actionPerformed(ActionEvent event)
+	{
+		addEmpFrame = new JFrame();
+		panel = new JPanel();
+
+		addEmpFrame.setLayout(new GridBagLayout());  // set a GridBagLayout to tab0
+		add = new JButton ("Add");
+		cancel = new JButton ("Cancel");
+		
+		addEmpFrame.add(add);
+		addEmpFrame.add(cancel);
+		
+		addEmpFrame.setSize(300, 300);
+		
+		addEmpFrame.setVisible(true);
+	}
+}

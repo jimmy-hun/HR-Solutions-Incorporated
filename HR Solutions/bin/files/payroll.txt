@@ -1,0 +1,120 @@
+---------  Department ---------
+
+
+Total Fortnightly Pay For  Department:	$0.00
+
+--------- Accounting Department ---------
+
+Employee ID:		10009
+First Name:		Narelle
+Surname:		Wilkins
+Gender:			F
+Address:		782 Long St
+Pay Level:		8
+Fortnightly Pay:	$3705.24
+
+Employee ID:		10010
+First Name:		Lawrence
+Surname:		Dooley2
+Gender:			M
+Address:		14 Hazelwood Rd
+Pay Level:		7
+Fortnightly Pay:	$3113.34
+
+
+Total Fortnightly Pay For Accounting Department:	$6818.59
+
+--------- Marketing Department ---------
+
+Employee ID:		10001
+First Name:		Jenny
+Surname:		Canovan
+Gender:			F
+Address:		8 Brushtail Boulevard
+Pay Level:		8
+Fortnightly Pay:	$3705.24
+
+Employee ID:		10000
+First Name:		Martin
+Surname:		Wright
+Gender:			M
+Address:		173 Wakefield Drive
+Pay Level:		6
+Fortnightly Pay:	$2740.70
+
+Employee ID:		10003
+First Name:		Lara
+Surname:		Masciowicz
+Gender:			F
+Address:		9 Tulip Crescent
+Pay Level:		3
+Fortnightly Pay:	$2059.13
+
+
+Total Fortnightly Pay For Marketing Department:	$8505.07
+
+--------- Sales Department ---------
+
+Employee ID:		10007
+First Name:		John
+Surname:		Provis
+Gender:			M
+Address:		28 Lynch Avenue
+Pay Level:		6
+Fortnightly Pay:	$2740.70
+
+Employee ID:		10008
+First Name:		Davina
+Surname:		Coulston
+Gender:			F
+Address:		66 Short St
+Pay Level:		4
+Fortnightly Pay:	$2265.04
+
+Employee ID:		10004
+First Name:		Jeremy
+Surname:		Pieter 
+Gender:			M
+Address:		81 Main St
+Pay Level:		3
+Fortnightly Pay:	$2059.13
+
+Employee ID:		10005
+First Name:		Candace
+Surname:		du Mars
+Gender:			F
+Address:		342 Lorikeet Way
+Pay Level:		2
+Fortnightly Pay:	$1871.94
+
+Employee ID:		10006
+First Name:		Bamekan
+Surname:		Sivabulasandaram
+Gender:			M
+Address:		87 Cross Rd
+Pay Level:		1
+Fortnightly Pay:	$1701.76
+
+
+Total Fortnightly Pay For Sales Department:	$10638.57
+
+--------- Not in a Department ---------
+
+Employee ID:		10011
+First Name:		Heinz
+Surname:		Schmidt
+Gender:			M
+Address:		45 Switchback Rd
+Pay Level:		5
+Fortnightly Pay:	$2491.55
+
+Employee ID:		10012
+First Name:		Kelvin
+Surname:		Chang
+Gender:			M
+Address:		91 Phillip St
+Pay Level:		3
+Fortnightly Pay:	$2059.13
+
+Total Fortnightly Pay For Non Departments:	$4550.67
+Total Fortnightly Pay For Organisation Kitten inc. Human Resources:	$25962.23

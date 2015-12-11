@@ -1,0 +1,93 @@
+3			// total departments
+
+Marketing	// department name
+New York	// department location
+4			// total employees following
+
+Martin
+Wright
+M
+173 Wakefield Drive
+6
+
+Jenny
+Canovan
+F
+8 Brushtail Boulevard
+8
+
+Thomas
+Hedinger
+M
+45 Springfield Rd
+4
+
+Lara
+Masciowicz
+F
+9 Tulip Crescent
+3
+
+Sales		// department name
+Boston		// department location
+5			// total employees following
+
+Jeremy
+Pieter 
+M
+81 Main St
+3
+
+Candace
+du Mars
+F
+342 Lorikeet Way
+2
+
+Bamekan
+Sivabulasandaram
+M
+87 Cross Rd
+1
+
+John
+Provis
+M
+28 Lynch Avenue
+6
+
+Davina
+Coulston
+F
+66 Short St
+4
+
+Accounting	// department name
+Los Angeles	// department location
+2			// total employees following
+
+Narelle
+Wilkins
+F
+782 Long St
+8
+
+Lawrence
+Dooley
+M
+14 Hazelwood Rd
+7
+
+2			// total employees that are not allocated
+
+Heinz
+Schmidt
+M
+45 Switchback Rd
+5
+
+Kelvin
+Chang
+M
+91 Phillip St
+3

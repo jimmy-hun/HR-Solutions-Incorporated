@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="257" key="DIALOG_WIDTH"/>
-		<item value="428" key="DIALOG_Y_ORIGIN"/>
-		<item value="998" key="DIALOG_X_ORIGIN"/>
-		<item value="380" key="DIALOG_HEIGHT"/>
-		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
-	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="AvailableEmployeeID" key="selection"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
-		<item value="compareTo" key="selection"/>
 		<list key="findhistory">
-			<item value="compareTo"/>
-			<item value="SortDepartmentByName"/>
-			<item value="head"/>
-			<item value="GetFortnightlyPayReport"/>
-			<item value="PayReportListener"/>
-			<item value="WriteToFile"/>
-			<item value="PAYROLL_TEXT_FILE_PATH"/>
-			<item value="payroll.txt"/>
+			<item value="AvailableEmployeeID"/>
+			<item value="GetAvailableEmployeeID"/>
+			<item value="payLevelList.add"/>
+			<item value="payLevelList.add(matchKey.toString() + &quot; - &quot; + payLevelMap.get(matchKey));"/>
+			<item value="lblPayLevelVal"/>
+			<item value="lblPayLevel"/>
+			<item value="employeeList"/>
+			<item value="GetAllEmployeesForComboBox"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
 		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="167" key="DIALOG_Y_ORIGIN"/>
+		<item value="1524" key="DIALOG_X_ORIGIN"/>
 	</section>
 </section>

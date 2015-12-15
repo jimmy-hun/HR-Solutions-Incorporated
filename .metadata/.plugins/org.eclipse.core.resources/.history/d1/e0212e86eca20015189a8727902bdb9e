@@ -1540,7 +1540,7 @@ public class Main extends JFrame
 				Map<Integer, Double> payLevelMap = payLevelClass.getAllPayLevels();
 				
 				// pre-populate data
-				lblPayLevelVal.setText("Pay Level " + String.valueOf(employee.getPayLevel()) + ":   [$" + payLevelMap.get(employee.getPayLevel()) + "]");
+				lblPayLevelVal.setText("Level " + String.valueOf(employee.getPayLevel()) + ":   [$" + payLevelMap.get(employee.getPayLevel()) + "]");
 				lblFirstNameVal.setText(employee.getFirstName());
 				lblSurnameVal.setText(employee.getSurname());
 				lblGenderVal.setText(String.valueOf(employee.getGender()));

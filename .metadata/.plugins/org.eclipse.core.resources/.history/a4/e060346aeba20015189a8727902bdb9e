@@ -1123,7 +1123,7 @@ public class Main extends JFrame
 			jFrame.add(cbPayLevel, c);
 			
 			// Pay Amount Label
-			lblPayLabel = new JLabel("Previously @ ");
+			lblPayLabel = new JLabel("Previously ");
 			c.fill = GridBagConstraints.HORIZONTAL; // alignment
 			c.ipady = 10;		// makes component taller
 			c.weightx = 0.5;	// request any extra horizontal space
@@ -1211,7 +1211,7 @@ public class Main extends JFrame
 				
 				// enable array to get Map from PayLevel to get corresponding value
 				Map<Integer, Double> payLevelMap = payLevelClass.getAllPayLevels();
-				lblPayAmount.setText("Pay Level " + String.valueOf(employee.getPayLevel()) + ":   [$" + payLevelMap.get(employee.getPayLevel())+ "]");
+				lblPayAmount.setText("Lv. " + String.valueOf(employee.getPayLevel()) + "; $" + payLevelMap.get(employee.getPayLevel()));
 
 				// display the edit button as something is now selected
 				btnEdit.setVisible(true);
@@ -1466,7 +1466,7 @@ public class Main extends JFrame
 			jFrame.add(lblAddressVal, c);
 
 			// Pay Level Label
-			lblPayLevel = new JLabel("Currently @ ");
+			lblPayLevel = new JLabel("Pay Level:");
 			c.fill = GridBagConstraints.HORIZONTAL; // alignment
 			c.ipady = 10;		// makes component taller
 			c.weightx = 0.5;	// request any extra horizontal space
@@ -1540,7 +1540,7 @@ public class Main extends JFrame
 				Map<Integer, Double> payLevelMap = payLevelClass.getAllPayLevels();
 				
 				// pre-populate data
-				lblPayLevelVal.setText("Pay Level " + String.valueOf(employee.getPayLevel()) + ":   [$" + payLevelMap.get(employee.getPayLevel()) + "]");
+				lblPayLevelVal.setText(String.valueOf(employee.getPayLevel()) + " - $" + payLevelMap.get(employee.getPayLevel()));
 				lblFirstNameVal.setText(employee.getFirstName());
 				lblSurnameVal.setText(employee.getSurname());
 				lblGenderVal.setText(String.valueOf(employee.getGender()));

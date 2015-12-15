@@ -1,0 +1,69 @@
+package function;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class PayLevel
+{
+	private Map<Integer, Double> PayLevels;
+	
+	// Name: 	PayLevel 
+	// Purpose:	To put the pay levels in a hash map for calling  
+	// Passed: 	Nothing
+	// Returns: Nothing
+	// Input: 	Nothing
+	// Output: 	Nothing
+	// Effect: 	1. PayLevels = new HashMap<Integer, Double>()	set values to hash map
+	public PayLevel()
+	{
+		PayLevels = new HashMap<Integer, Double>();
+		PayLevels.put(1, 44245.75);
+		PayLevels.put(2, 48670.32);
+		PayLevels.put(3, 53537.35);
+		PayLevels.put(4, 58891.09);
+		PayLevels.put(5, 64780.20);
+		PayLevels.put(6, 71258.22);
+		PayLevels.put(7, 80946.95);
+		PayLevels.put(8, 96336.34);
+	}
+	
+	// Name: 	getAllPayLevels 
+	// Purpose:	To return all pay levels  
+	// Passed: 	Nothing
+	// Returns: PayLevels
+	// Input: 	Nothing
+	// Output: 	Nothing
+	// Effect: 	To return all pay levels
+	public Map<Integer, Double> getAllPayLevels() 
+	{
+		return PayLevels;
+	}
+	
+	// Name: 	getAnnualAmount 
+	// Purpose:	To return a specific pay level  
+	// Passed: 	payLevel
+	// Returns: PayLevels
+	// Input: 	Nothing
+	// Output: 	Nothing
+	// Effect: 	int payLevel is a index that corresponds to the hash map (PayLevels).
+	//			PayLevels.get(payLevel) will return the annual amount for that index.
+	public double getAnnualAmount(int payLevel) 
+	{
+		return PayLevels.get(payLevel);
+	}
+	
+	// Name: 	getFortnightlyAmount 
+	// Purpose:	To return a specific pay level  
+	// Passed: 	payLevel
+	// Returns: PayLevels
+	// Input: 	Nothing
+	// Output: 	Nothing
+	// Effect: 	int payLevel is a index that corresponds to the hash map (PayLevels).
+	//			PayLevels.get(payLevel) will return the annual amount for that index.
+	//			But since this is fortnightly, we divide by 26. Specified in Req-10: An ability to produce a pay report.
+	//			=> "Every fortnight, the payroll department needs to pay employees 1/26th of their annual salary."
+	public double getFortnightlyAmount(int payLevel) 
+	{
+		return PayLevels.get(payLevel) / 26;
+	}
+}

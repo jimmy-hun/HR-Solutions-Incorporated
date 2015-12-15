@@ -3,6 +3,11 @@
 
 Total Fortnightly Pay For  Department:	$0.00
 
+---------  Department ---------
+
+
+Total Fortnightly Pay For  Department:	$0.00
+
 --------- Accounting Department ---------
 
 Employee ID:		10009
@@ -36,7 +41,7 @@ Fortnightly Pay:	$3705.24
 
 Employee ID:		10000
 First Name:		Martin
-Surname:		Wright
+Surname:		Wrighter
 Gender:			M
 Address:		173 Wakefield Drive
 Pay Level:		6

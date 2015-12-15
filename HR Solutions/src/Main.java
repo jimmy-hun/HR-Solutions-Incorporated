@@ -577,7 +577,7 @@ public class Main extends JFrame
 		// advanced for loop... no i++ is required as it loops ??? with ???
 		for(Integer matchKey : payLevelMap.keySet())
 		{
-			payLevelList.add(matchKey.toString() + " - " + payLevelMap.get(matchKey)); // add from map to the array list
+			payLevelList.add(matchKey.toString()); // add from map to the array list
 			//payLevelList.add(String.format("%s - $%s", pl, NumberFormat.getInstance().format(payLevelMap.get(pl))));
 		}
 
@@ -689,7 +689,7 @@ public class Main extends JFrame
 			c.gridy = 1;		// 1st row [position in rows]
 			jFrame.add(lblEmployeeID, c);
 
-			// Employee ID label
+			// Employee ID 
 			txtEmployeeID = new JLabel(String.format("%d", organisation.GetAvailableEmployeeID()));
 			c.fill = GridBagConstraints.HORIZONTAL; // alignment
 			c.ipady = 10;		// makes component taller
@@ -948,7 +948,7 @@ public class Main extends JFrame
 	{
 		private JFrame jFrame;
 		private JButton btnEdit, btnCancel;
-		private JLabel lblEmployeeID, lblFirstName, lblSurname, lblGender, lblAddress, lblPayLevel;
+		private JLabel lblEmployeeID, lblFirstName, lblSurname, lblGender, lblAddress, lblPayLevel, lblPayLabel, lblPayAmount;
 		private JTextField txtFirstName, txtSurname, txtAddress;
 		private JComboBox cbEmployeeID, cbPayLevel;
 		private JRadioButton rblGenderMale, rblGenderFemale;
@@ -1121,6 +1121,28 @@ public class Main extends JFrame
 			c.gridx = 2;		// how far it leans
 			c.gridy = 7;		// [position in rows]
 			jFrame.add(cbPayLevel, c);
+			
+			// Pay Amount Label
+			lblPayLabel = new JLabel("Pay Amount:");
+			c.fill = GridBagConstraints.HORIZONTAL; // alignment
+			c.ipady = 10;		// makes component taller
+			c.weightx = 0.5;	// request any extra horizontal space
+			c.weighty = 0.5;	// request any extra vertical space
+			c.gridwidth = 1;	// 1 columns wide
+			c.gridx = 1;		// how far it leans
+			c.gridy = 8;		// [position in rows]
+			jFrame.add(lblPayLabel, c);
+
+			// ComboBox
+			lblPayAmount = new JLabel();
+			c.fill = GridBagConstraints.HORIZONTAL; // alignment
+			c.ipady = 10;		// makes component taller
+			c.weightx = 0.5;	// request any extra horizontal space
+			c.weighty = 0.5;	// request any extra vertical space
+			c.gridwidth = 1;	// 1 columns wide
+			c.gridx = 2;		// how far it leans
+			c.gridy = 8;		// [position in rows]
+			jFrame.add(lblPayAmount, c);
 
 			// Edit button
 			btnEdit = new JButton ("Edit");
@@ -1130,7 +1152,7 @@ public class Main extends JFrame
 			c.weighty = 0.5;	// request any extra vertical space
 			c.gridwidth = 1;	// 1 columns wide
 			c.gridx = 1;		// how far it leans
-			c.gridy = 8;		// 2nd row [position in rows]
+			c.gridy = 9;		// 2nd row [position in rows]
 			jFrame.add(btnEdit, c);
 			btnEdit.addActionListener(btnHandler);
 			//hide the button since can not edit at this time
@@ -1144,7 +1166,7 @@ public class Main extends JFrame
 			c.weighty = 0.5;	// request any extra vertical space
 			c.gridwidth = 1;	// 1 columns wide
 			c.gridx = 2;		// how far it leans
-			c.gridy = 8;		// 3rd row [position in rows]
+			c.gridy = 9;		// 3rd row [position in rows]
 			jFrame.add(btnCancel, c);
 			btnCancel.addActionListener(btnHandler);
 
@@ -1173,7 +1195,7 @@ public class Main extends JFrame
 			if(employeeID > 0)
 			{
 				Employee employee = organisation.GetEmployee(employeeID);
-
+				
 				// pre-populate data
 				cbPayLevel.setSelectedItem(String.valueOf(employee.getPayLevel()));
 				txtFirstName.setText(employee.getFirstName());
@@ -1186,6 +1208,10 @@ public class Main extends JFrame
 				}
 
 				txtAddress.setText(employee.getAddress());
+				
+				// enable array to get Map from PayLevel to get corresponding value
+				Map<Integer, Double> payLevelMap = payLevelClass.getAllPayLevels();
+				lblPayAmount.setText("Lv. " + String.valueOf(employee.getPayLevel()) + "; $" + payLevelMap.get(employee.getPayLevel()));
 
 				// display the edit button as something is now selected
 				btnEdit.setVisible(true);
@@ -1481,7 +1507,7 @@ public class Main extends JFrame
 			c.ipady = 10;		// makes component taller
 			c.weightx = 0.5;	// request any extra horizontal space
 			c.weighty = 0.5;	// request any extra vertical space
-			c.gridwidth = 3;	// 3 columns wide
+			c.gridwidth = 2;	// 2 columns wide
 			c.gridx = 3;		// how far it leans
 			c.gridy = 7;		// [position in rows]
 			jFrame.add(btnCancel, c);
@@ -1510,8 +1536,11 @@ public class Main extends JFrame
 			{
 				Employee employee = organisation.GetEmployee(employeeID);
 
+				// enable array to get Map from PayLevel to get corresponding value
+				Map<Integer, Double> payLevelMap = payLevelClass.getAllPayLevels();
+				
 				// pre-populate data
-				lblPayLevelVal.setText(String.valueOf(employee.getPayLevel()));
+				lblPayLevelVal.setText(String.valueOf(employee.getPayLevel()) + " - $" + payLevelMap.get(employee.getPayLevel()));
 				lblFirstNameVal.setText(employee.getFirstName());
 				lblSurnameVal.setText(employee.getSurname());
 				lblGenderVal.setText(String.valueOf(employee.getGender()));
@@ -2154,7 +2183,7 @@ public class Main extends JFrame
 			c.ipady = 10;		// makes component taller
 			c.weightx = 0.5;	// request any extra horizontal space
 			c.weighty = 0.5;	// request any extra vertical space
-			c.gridwidth = 3;	// 3 columns wide
+			c.gridwidth = 2;	// 2 columns wide
 			c.gridx = 3;		// how far it leans
 			c.gridy = 4;		// 3rd row [position in rows]
 			jFrame.add(btnCancel, c);
@@ -2164,7 +2193,7 @@ public class Main extends JFrame
 			jFrame.setSize(300, 160);
 			//display frame
 			jFrame.setVisible(true);
-			//center frame
+			//centre frame
 			jFrame.setLocationRelativeTo(null);
 			//fixed size
 			jFrame.setResizable(false);

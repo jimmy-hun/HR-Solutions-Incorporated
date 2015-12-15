@@ -577,7 +577,7 @@ public class Main extends JFrame
 		// advanced for loop... no i++ is required as it loops ??? with ???
 		for(Integer matchKey : payLevelMap.keySet())
 		{
-			payLevelList.add(matchKey.toString() + " - " + payLevelMap.get(matchKey)); // add from map to the array list
+			payLevelList.add(matchKey.toString() + " - " + payLevelMap.values()); // add from map to the array list
 			//payLevelList.add(String.format("%s - $%s", pl, NumberFormat.getInstance().format(payLevelMap.get(pl))));
 		}
 

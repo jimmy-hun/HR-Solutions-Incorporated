@@ -897,6 +897,22 @@ public class Main extends JFrame
 						}
 
 						String address = txtAddress.getText();
+						
+						// if anything contains a null value, show NOT SPECIFIED
+						if (txtFirstName.getText().isEmpty())
+						{
+							firstName = "* Not Specified *";
+						}
+						
+						if (txtSurname.getText().isEmpty())
+						{
+							surname = "* Not Specified *";
+						}
+						
+						if (txtAddress.getText().isEmpty())
+						{
+							address = "* Not Specified *";
+						}
 
 						Employee employee = new Employee(employeeID, payLevel, firstName, surname, gender, address);
 
@@ -1239,6 +1255,22 @@ public class Main extends JFrame
 							}
 
 							String address = txtAddress.getText();
+							
+							// if anything contains a null value, show NOT SPECIFIED
+							if (txtFirstName.getText().isEmpty())
+							{
+								firstName = "* Not Specified *";
+							}
+							
+							if (txtSurname.getText().isEmpty())
+							{
+								surname = "* Not Specified *";
+							}
+							
+							if (txtAddress.getText().isEmpty())
+							{
+								address = "* Not Specified *";
+							}
 
 							Employee employee = organisation.GetEmployee(employeeID);
 							employee.SetDetails(payLevel, firstName, surname, gender, address);
@@ -1704,7 +1736,7 @@ public class Main extends JFrame
 			// Output: 	Nothing
 			// Effect: 	a department will be added or the frame will be disposed
 			//			Department department makes a new department with the current status
-			//			organisation.AddDepartment adds the department
+			//			organisation.
 			public void actionPerformed( ActionEvent event ) 
 			{
 				if (event.getSource() == btnAdd) 
@@ -1714,7 +1746,20 @@ public class Main extends JFrame
 						int departmentID = Integer.parseInt(txtDepartmentID.getText()); // conversion required
 						String name = txtName.getText();
 						String location = txtLocation.getText();
-
+						
+						
+						// if the name or location is a null value, the system does not allow deletes for that department
+						// this makes null values for name or location turn into NOT SPECIFIED if this is the case
+						if (txtName.getText().isEmpty())
+						{
+							name = "* Not Specified *";
+						}
+						
+						if (txtLocation.getText().isEmpty())
+						{
+							location = "* Not Specified *";
+						}
+						
 						Department department = new Department(departmentID, name, location);
 
 						organisation.AddDepartment(departmentID, department);
@@ -1951,6 +1996,18 @@ public class Main extends JFrame
 							int departmentID = GetIntFromComboBox(cbDepartmentID.getSelectedItem().toString());
 							String name = txtName.getText();
 							String location = txtLocation.getText();
+							
+							// if the name or location is a null value, the system does not allow deletes for that department
+							// this makes null values for name or location turn into NOT SPECIFIED if this is the case
+							if (txtName.getText().isEmpty())
+							{
+								name = "* Not Specified *";
+							}
+							
+							if (txtLocation.getText().isEmpty())
+							{
+								location = "* Not Specified *";
+							}
 
 							// change the department details
 							Department department = organisation.GetDepartment(departmentID);
@@ -2160,7 +2217,7 @@ public class Main extends JFrame
 				// pre-populate data
 				lblNameVal.setText(department.getName());
 				lblLocationVal.setText(department.getLocation());
-				//display the edit button
+				// display the delete button
 				btnDelete.setVisible(true);
 			}
 
@@ -2168,7 +2225,7 @@ public class Main extends JFrame
 			{
 				lblNameVal.setText("");
 				lblLocationVal.setText("");
-				//hide the button since can not edit at this time
+				// hide the button (THIS IS FOR DEP ID #0, WHICH IS "Please Select"
 				btnDelete.setVisible(false);
 			}
 		}

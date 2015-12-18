@@ -1,13 +1,3 @@
----------  Department ---------
-
-
-Total Fortnightly Pay For  Department:	$0.00
-
----------  Department ---------
-
-
-Total Fortnightly Pay For  Department:	$0.00
-
 --------- Accounting Department ---------
 
 Employee ID:		10009
@@ -20,7 +10,7 @@ Fortnightly Pay:	$3705.24
 
 Employee ID:		10010
 First Name:		Lawrence
-Surname:		Dooley2
+Surname:		Dooley
 Gender:			M
 Address:		14 Hazelwood Rd
 Pay Level:		7
@@ -41,11 +31,19 @@ Fortnightly Pay:	$3705.24
 
 Employee ID:		10000
 First Name:		Martin
-Surname:		Wrighter
+Surname:		Wright
 Gender:			M
 Address:		173 Wakefield Drive
 Pay Level:		6
 Fortnightly Pay:	$2740.70
+
+Employee ID:		10002
+First Name:		Thomas
+Surname:		Hedinger
+Gender:			M
+Address:		45 Springfield Rd
+Pay Level:		4
+Fortnightly Pay:	$2265.04
 
 Employee ID:		10003
 First Name:		Lara
@@ -56,7 +54,7 @@ Pay Level:		3
 Fortnightly Pay:	$2059.13
 
 
-Total Fortnightly Pay For Marketing Department:	$8505.07
+Total Fortnightly Pay For Marketing Department:	$10770.12
 
 --------- Sales Department ---------
 
@@ -122,4 +120,4 @@ Pay Level:		3
 Fortnightly Pay:	$2059.13
 
 Total Fortnightly Pay For Non Departments:	$4550.67
-Total Fortnightly Pay For Organisation Kitten inc. Human Resources:	$25962.23
+Total Fortnightly Pay For Organisation HR Solutions Incorporated:	$28227.27
